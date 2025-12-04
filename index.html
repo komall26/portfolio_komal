@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Komal Bhalerao — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial;line-height:1.5;margin:0;background:linear-gradient(180deg,#071129 0%, #03101a 100%);color:#e6eef6;padding:30px}
+    .container{max-width:900px;margin:0 auto}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;color:#012; font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;margin-bottom:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:8px;font-size:14px}
+    .projects .proj{margin-bottom:10px}
+    footer{margin-top:18px;color:var(--muted);font-size:14px;text-align:center}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#012;font-weight:600;text-decoration:none}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}header{flex-direction:row}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="card">
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="avatar">KB</div>
+        <div>
+          <h1>Komal Bhalerao</h1>
+          <div style="color:var(--muted);font-weight:600">SY — AIDS (Artificial Intelligence & Data Science)</div>
+          <p class="lead">Enthusiastic engineering student learning web development, Java, and Python. Building small projects and improving practical skills.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 style="margin-top:0">About Me</h2>
+      <p>Hi — I'm Komal, a second-year engineering student in the AIDS stream. I enjoy building web pages with HTML & CSS, coding in Java and Python, and learning data science concepts. I like hands-on projects and contributing in teams.</p>
+    </section>
+
+    <div class="grid">
+      <div>
+        <section class="card">
+          <h3 style="margin-top:0">Skills</h3>
+          <ul class="skills">
+            <li>HTML & CSS</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>SQL</li>
+            <li>WordPress</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <p style="margin:6px 0">Email: <strong>(kbhalerao405@gmail.com)</strong></p>
+          <p style="margin:6px 0">Phone: <strong>(7276998278)</strong></p>
+          <p style="margin:6px 0">Location: <strong>(Pune , Maharashtra)</strong></p>
+          <a class="btn" href="#contact">Get in touch</a>
+        </section>
+      </div>
+
+      <div>
+        <section class="card projects">
+          <h3 style="margin-top:0">Projects</h3>
+          <div class="proj">
+            <strong>Personal Portfolio Website</strong>
+            <div style="color:var(--muted);font-size:14px">A responsive portfolio built with HTML & CSS showcasing projects and skills.</div>
+          </div>
+          <div class="proj">
+            <strong>Simple Calculator (Python)</strong>
+            <div style="color:var(--muted);font-size:14px">A command-line calculator performing basic arithmetic operations.</div>
+          </div>
+          <div class="proj">
+            <strong>Java Mini Programs</strong>
+            <div style="color:var(--muted);font-size:14px">Small Java programs demonstrating OOP concepts: classes, loops, arrays.</div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3 style="margin-top:0">Education</h3>
+          <p style="margin:6px 0"><strong>B.E. — Artificial Intelligence & Data Science (AIDS)</strong><br>Second Year</p>
+          <p style="margin:6px 0"><strong>Higher Secondary (12th)</strong><br>(Add school & percentage)</p>
+        </section>
+      </div>
+    </div>
+
+    <section class="card">
+      <h3 style="margin-top:0">Certifications & Strengths</h3>
+      <p style="margin:6px 0">Add any online course certificates (e.g., HTML, Python) here.</p>
+      <ul style="color:var(--muted)">
+        <li>Quick learner</li>
+        <li>Hardworking</li>
+        <li>Team player</li>
+        <li>Good communication skills</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3 style="margin-top:0">Contact Me</h3>
+      <p>If you'd like to collaborate or see my projects, email me at <strong>add-your-kbhalerao405@gmail.com</strong> or call <strong>(7276998278)</strong>.</p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Komal Bhalerao — SY AIDS</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+```
